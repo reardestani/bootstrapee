@@ -1,0 +1,26 @@
+---
+layout: page
+title: All freebies
+slug: all
+---
+
+<section id="content" class="content">
+
+	<div class="grid-container clearfix">
+
+		{%	for post in site.posts %}
+			{% if post.category != "blog" %}
+				<div class="nested-item size{{ post.grid-preview-width }}{{ post.grid-preview-height }}">
+					<a class="item-image" href="{{ post.url }}"><img src="{{ site.baseurl }}/posts/{{ post.slug }}/grid-preview.jpg" alt="{{ post.title }}" /></a>
+					<span class="item-category">{{ post.category }}</span>
+					<div class="item-contributer">
+						<img class="img-thumbnail" src="{{ site.baseurl }}/contributers/{{ post.contributer }}/{{ post.contributer }}.png" alt="{{ post.contributer }}" />
+						<h5>@{{ post.contributer }} <br><small>{{ post.contributer-badge }}</small></h5>
+					</div> <!-- /nested-item -->
+				</div>
+			{% endif %}
+		{% endfor %}
+
+	</div> <!-- /grid-container -->
+
+</section>

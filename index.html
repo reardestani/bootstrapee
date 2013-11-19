@@ -1,0 +1,66 @@
+---
+layout: home
+title: Bootstrapee
+---
+
+<header class="site-header" role="banner">
+	<div class="nav container">
+		<div class="row">
+			<div class="col-xs-3">
+				<a href="./" class="site-logo">
+					<span>E</span><span>E</span>
+				</a>
+			</div> <!-- col -->
+			<div class="col-xs-9">
+				<nav class="site-menu">
+					<ul class="list-inline">
+						<li class="active"><a href="{{ site.baseurl }}">Home</a></li>
+						<li><a href="{{ site.baseurl }}/all">All Freebies</a></li>
+						<li><a href="{{ site.baseurl }}/blog">Blog</a></li>
+						<li><a href="#">Contribute <small>- coming soon</small></a></li>
+					</ul>
+				</nav>
+				<h1 class="site-description">{{ site.description }}</h1>
+			</div> <!-- /col -->
+		</div> <!-- /row -->
+	</div> <!-- /nav -->
+	<br><br><br>
+
+	<div class="container">
+		<input data-hasgrid="true" data-step="1" data-postfix=" Featured Item" type="text" class="featured-range" name="rangeName" value="">
+		<br>
+		<br>
+		<div class="featured-carousel carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+
+        {%	for post in site.posts %}
+        	{% if post.featured == true %}
+	          <div class="item">
+	            <img src="{{ site.baseurl }}/posts/{{ post.slug }}/{{ post.grid-preview }}.jpg" alt="{{ post.title }}">
+	          </div>
+	         {% endif %}
+				{% endfor %}
+
+      </div> <!-- /carousel-inner -->
+    </div> <!-- /featured-carousel -->
+	</div><!-- /col -->
+</header>
+
+<section id="content" class="content">
+
+	<div class="grid-container clearfix">
+
+		{%	for post in site.posts %}
+			<div class="nested-item size{{ post.grid-preview-width }}{{ post.grid-preview-height }}">
+				<a class="item-image" href="{{ post.url }}"><img src="{{ site.baseurl }}/posts/{{ post.slug }}/grid-preview.jpg" alt="{{ post.title }}" /></a>
+				<span class="item-category">{{ post.category }}</span>
+				<div class="item-contributer">
+					<img class="img-thumbnail" src="{{ site.baseurl }}/contributers/{{ post.contributer }}/{{ post.contributer }}.png" alt="{{ post.contributer }}" />
+					<h5>@{{ post.contributer }} <br><small>{{ post.contributer-badge }}</small></h5>
+				</div> <!-- /item-contributer -->
+			</div> <!-- /nested-item -->
+		{% endfor %}	
+
+	</div> <!-- /grid-container -->
+
+</section>
