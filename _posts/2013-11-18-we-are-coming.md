@@ -49,5 +49,5 @@ The below image shows you step by step download procedure. Consider the followin
 + For free download, you do not need to enter your payment details, just enter your email then enter 0 (the payment details section will disappear) and enter "give" button. 
 + It is recommended to enter a fair price then download. It helps us to provide more freebies in the future.
 
-![Bootstrapee download guidelines]({{ site.url }}/posts/{{ page.slug }}/download-guidline.png)
+![Bootstrapee download guidelines]({{ site.baseurl }}/posts/{{ page.slug }}/download-guidline.png)
 
