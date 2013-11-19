@@ -11,7 +11,7 @@ title: Official Blog
 
 		{% for post in paginator.posts %}
 			<h2 class="post-title blog">
-				<a class="pink" href="{{ post.url }}">
+				<a class="pink" href="{{ site.baseurl }}{{ post.url }}">
 					{% if post.tag == "announcement" %}
 						<span class="pull-left glyphicon glyphicon-bell" data-toggle="tooltip" data-placement="left" title="{{ post.tag }}"></span> 
 					{% else %}
