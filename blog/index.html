@@ -1,0 +1,32 @@
+---
+layout: home
+title: Official Blog
+---
+
+<!-- Include blog nav -->
+{% include blog-nav.html %} 
+
+<section id="content" class="content">
+	<div class="container blog clearfix">
+
+		{% for post in paginator.posts %}
+			<h2 class="post-title blog">
+				<a class="pink" href="{{ post.url }}">
+					{% if post.tag == "announcement" %}
+						<span class="pull-left glyphicon glyphicon-bell" data-toggle="tooltip" data-placement="left" title="{{ post.tag }}"></span> 
+					{% else %}
+						<span class="pull-left glyphicon glyphicon-gift" data-toggle="tooltip" data-placement="left" title="{{ post.tag }}"></span> 
+					{% endif %}
+
+					{{ post.title }}
+				</a> 
+				<small class="small-text"> {{ post.date | date_to_string }}</small>
+			</h2>
+			<hr>
+		{% endfor %}	
+
+		<!-- Include pagination -->
+		{% include pagination.html %}
+
+	</div> <!-- /container -->
+</section> <!-- /content -->

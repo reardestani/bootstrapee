@@ -1,0 +1,14 @@
+<nav class="navbar page navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="{{ site.baseurl }}/" class="navbar-brand">Bootstrapee</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li{% if page.slug == "all" %} class="active"{% endif %}><a href="{{ site.baseurl }}/all">All Freebies</a></li>
+        <li{% if page.slug == "blog" %} class="active"{% endif %}><a href="{{ site.baseurl }}/blog">Blog</a></li>
+        <li{% if page.slug == "contribute" %} class="active"{% endif %}><a href="#">Contribute <small>- coming soon</small></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /container-->
+</nav>
