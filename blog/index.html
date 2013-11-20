@@ -18,7 +18,8 @@ title: Official Blog
 						<span class="pull-left glyphicon glyphicon-gift" data-toggle="tooltip" data-placement="left" title="{{ post.tag }}"></span> 
 					{% endif %}
 
-					{{ post.title }}
+					
+					{% include post-title.html %}
 				</a> 
 				<small class="small-text"> {{ post.date | date_to_string }}</small>
 			</h2>

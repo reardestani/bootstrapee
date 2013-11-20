@@ -20,8 +20,8 @@
 		}
 	 });
 
-	 // Count no. of featured post
-	 var featuredPostNo = $('.carousel.inner').count;
+	// Count no. of featured post
+	var featuredPostNo = $('.carousel.inner').count;
 
 	// Nested init
 	$('.grid-container').nested({
@@ -30,6 +30,12 @@
   	gutter: 5,
   	resizeToFit: false,
   }); 
+
+  // Lightbox init
+  $('.btn-lightbox').magnificPopup({ 
+    type: 'image'
+    // other options
+  });
 
   // Tooltip
   $('[data-toggle="tooltip"]').tooltip();
@@ -41,17 +47,10 @@
   $('#affix').affix({
     offset: {
       top: 350, 
-      bottom: 300,
+      bottom: 350,
       right: 100
     }
   })
-
-	// Affix - avoid floating left
-	var affixWidth = $('.col-xs-3').position().left;
-
-	$(window).scroll(function() {
-	 $('.col-xs-3.affix').css('left', affixWidth);
-	});
 
 	// Dismiss download modal & fix body overflow
 	$('.gumroad-button.btn').click( function() {
@@ -60,3 +59,11 @@
 	});
 
 })();
+
+// It needs to be before document loading otherwise it acts buggy
+// Affix - avoid floating left
+var affixWidth = $('.col-xs-3').position().left;
+
+$(window).on( "scroll", function() {
+  $('.col-xs-3.affix').css('left', affixWidth);
+});

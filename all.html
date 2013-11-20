@@ -15,7 +15,7 @@ slug: all
 					<span class="item-category">{{ post.category }}</span>
 					<div class="item-contributer">
 						<img class="img-thumbnail" src="{{ site.baseurl }}/contributers/{{ post.contributer }}/{{ post.contributer }}.png" alt="{{ post.contributer }}" />
-						<h5>@{{ post.contributer }} <br><small>{{ post.contributer-badge }}</small></h5>
+						<h5>@{{ post.contributer }} <br><small>{% include post-title.html %}</small></h5>
 					</div> <!-- /nested-item -->
 				</div>
 			{% endif %}

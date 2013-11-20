@@ -36,7 +36,10 @@ title: Bootstrapee
         {%	for post in site.posts %}
         	{% if post.featured == true %}
 	          <div class="item">
-	            <img src="{{ site.baseurl }}/posts/{{ post.slug }}/{{ post.grid-preview }}.jpg" alt="{{ post.title }}">
+	            <a href="{{ site.baseurl }}{{ post.url }}">
+	            	<span class="glyphicon glyphicon-link"></span>
+	            	<img src="{{ site.baseurl }}/posts/{{ post.slug }}/mid-preview.jpg" alt="{{ post.title }}">
+	            </a>
 	          </div>
 	         {% endif %}
 				{% endfor %}
@@ -56,7 +59,7 @@ title: Bootstrapee
 				<span class="item-category">{{ post.category }}</span>
 				<div class="item-contributer">
 					<img class="img-thumbnail" src="{{ site.baseurl }}/contributers/{{ post.contributer }}/{{ post.contributer }}.png" alt="{{ post.contributer }}" />
-					<h5>@{{ post.contributer }} <br><small>{{ post.contributer-badge }}</small></h5>
+					<h5>@{{ post.contributer }} <br><small>{% include post-title.html %}</small></h5>
 				</div> <!-- /item-contributer -->
 			</div> <!-- /nested-item -->
 		{% endfor %}	

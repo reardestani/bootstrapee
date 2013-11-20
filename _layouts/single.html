@@ -13,33 +13,18 @@
 			<div class="container">
 
 				<div class="page-header">
-					<h1 class="post-title">{{ page.title }}</h1>
+					<h1 class="post-title">{% include page-title.html %}</h1>
 				</div>
 
 				<div class="row">
 
 					<div class="col-xs-9">
 						<div class="post-content">
-							<img class="img-thumbnail full" src="{{ site.baseurl }}/items/{{ page.slug }}/{{ page.full-preview }}.jpg" alt="{{ page.title }}">
+							<img class="img-thumbnail full" src="{{ site.baseurl }}/posts/{{ page.slug }}/mid-preview.jpg" alt="{{ page.title }}">
 							<br><br>
 							{{ content }}
-							
 							<hr>
 						  <div id="disqus_thread"></div>
-					    <script type="text/javascript">
-					        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-					        var disqus_shortname = 'bootstrapee'; // required: replace example with your forum shortname
-
-					        /* * * DON'T EDIT BELOW THIS LINE * * */
-					        (function() {
-					            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-					            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-					            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-					        })();
-					    </script>
-					    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-					    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
 						</div> <!-- /post-content -->
 					</div> <!-- /col -->
 
@@ -50,20 +35,29 @@
 								<img class="img-thumbnail img-circle" data-toggle="tooltip" data-placement="top" title="{{ page.contributer-badge }}" src="{{ site.baseurl }}/contributers/{{ page.contributer }}/{{ page.contributer }}.png" alt="{{ post.contributer }}" />
 								<h5><strong>@{{ page.contributer }}</strong> <br><small>{{ page.contributer-description }}</small></h5>
 							</div> <!-- /item-contributer -->
+
 							<br>
-							<a class="btn btn-primary btn-block btn-lg btn-item-download" href="{{ site.baseurl }}/items/{{ page.slug }}/live-preview/"><span class="glyphicon glyphicon-play-circle"></span> Live Preview</a>
+							{% if page.category == "psd" %}
+								<a class="btn btn-primary btn-block btn-lg btn-item-preview btn-lightbox" href="{{ site.baseurl }}/posts/{{ page.slug }}/{{ page.full-preview }}.jpg"><span class="glyphicon glyphicon-play-circle"></span> Full Preview &nbsp;</a>
+							{% else %}
+								<a class="btn btn-primary btn-block btn-lg btn-item-preview" href="{{ site.baseurl }}/items/{{ page.slug }}/live-preview/"><span class="glyphicon glyphicon-play-circle"></span> Live Preview</a>
+							{% endif %}
 							<button class="btn btn-danger btn-block btn-lg btn-item-download" data-toggle="modal" data-target="#downloadModal"><span class="glyphicon glyphicon-cloud-download"></span> Download ZIP</button>
 							<br>
+
 							<ul class="list-unstyled specification">
 								<li data-toggle="tooltip" data-placement="left" title="Released on"><span class="glyphicon glyphicon-calendar"></span> &nbsp; {{ page.date | date_to_string }}</li>
 								<li data-toggle="tooltip" data-placement="left" title="Browser compatibility"><span class="glyphicon glyphicon-list"></span> &nbsp; {{ page.compatibility }}</li>
-								<li data-toggle="tooltip" data-placement="left" title="Framework"><span class="glyphicon glyphicon-filter"></span> &nbsp; {{ page.framework }}</li>
+								{% if page.framework == 0 %}
+								{% else %}
+									<li data-toggle="tooltip" data-placement="left" title="Framework"><span class="glyphicon glyphicon-filter"></span> &nbsp; {{ page.framework }}</li>
+								{% endif %}
 								<li data-toggle="tooltip" data-placement="left" title="Category"><span class="glyphicon glyphicon-tag"></span> &nbsp; {{ page.category }}</li>
-								<li data-toggle="tooltip" data-placement="left" title="Licence"><span class="glyphicon glyphicon-copyright-mark"></span> &nbsp; {{ page.license }}</li>
+								<li data-toggle="tooltip" data-placement="left" title="Licence"><span class="glyphicon glyphicon-copyright-mark"></span> &nbsp; <a class="pink" href="{{ site.baseurl }}/blog/2013/11/20/license-faq/">License FAQ</a></li>
 								<li data-toggle="tooltip" data-placement="left" title="Includes"><span class="glyphicon glyphicon-paperclip"></span> &nbsp; {{ page.include }}</li>
 							</ul>
 
-							<p class="text-center small-text">All right reserved &copy; Bootstrapee </p>
+							<p class="text-center small-text">All Right Reserved &copy; Bootstrapee </p>
 							<p class="text-center small-text"><a class="pink"  href="https://github.com/reardestani/bootstrapee/issues?state=open" target="_blank"><span class="glyphicon glyphicon-bullhorn"></span> Report issues</a></p>
 
 						</div> <!-- /item-details -->
@@ -114,6 +108,7 @@
 		============================================-->
 		<footer class="site-footer" role="contentinfo">
 			{% include footer.html %}
+			{% include disqus.html %}
 		</footer>
 
 	</body>
