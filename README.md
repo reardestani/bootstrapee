@@ -1,4 +1,4 @@
-# [Bootstrapee](http://bootstrapee.com) (beta release)
+# [Bootstrapee](http://bootstrapee.com) (alpha release)
 
 Bootstrapee is an open sourse project for offering free, sleek, high quality and developer friendly web resources.
 
