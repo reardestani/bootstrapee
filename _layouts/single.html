@@ -40,7 +40,7 @@
 							{% if page.category == "psd" %}
 								<a class="btn btn-primary btn-block btn-lg btn-item-preview btn-lightbox" href="{{ site.baseurl }}/posts/{{ page.slug }}/{{ page.full-preview }}.jpg"><span class="glyphicon glyphicon-play-circle"></span> Full Preview &nbsp;</a>
 							{% else %}
-								<a class="btn btn-primary btn-block btn-lg btn-item-preview" href="{{ site.baseurl }}/posts/{{ page.slug }}/live-preview/"><span class="glyphicon glyphicon-play-circle"></span> Live Preview</a>
+								<a class="btn btn-primary btn-block btn-lg btn-item-preview" href="{{ site.baseurl }}/posts/{{ page.slug }}/live-preview/" target="_blank"><span class="glyphicon glyphicon-play-circle"></span> Live Preview</a>
 							{% endif %}
 							<button class="btn btn-danger btn-block btn-lg btn-item-download" data-toggle="modal" data-target="#downloadModal"><span class="glyphicon glyphicon-cloud-download"></span> Download ZIP</button>
 							<br>
