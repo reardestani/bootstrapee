@@ -1,4 +1,4 @@
-# [Bootstrapee](http://bootstrapee.com) (alpha release)
+# [Bootstrapee](http://bootstrapee.com)
 
 Bootstrapee is an open sourse project for offering free, sleek, high quality and developer friendly web resources.
 
@@ -43,4 +43,4 @@ Every new release will increase the last number by one.
 
 ## Copyright and license
 
-Copyright 2013 Bootstrapee 
+&copy; 2013 Bootstrapee 
