@@ -1,4 +1,4 @@
-# [Bootstrapeeeee](http://bootstrapee.com)
+# [Bootstrapee](http://bootstrapee.com)
 
 Bootstrapee is an open sourse project for offering free, sleek, high quality and developer friendly web resources.
 
