@@ -39,8 +39,10 @@
 							<br>
 							{% if page.category == "psd" %}
 								<a class="btn btn-primary btn-block btn-lg btn-item-preview btn-lightbox" href="{{ site.baseurl }}/posts/{{ page.slug }}/{{ page.full-preview }}.jpg"><span class="glyphicon glyphicon-play-circle"></span> Full Preview &nbsp;</a>
-							{% else %}
+							{% elsif page.live-preview-external == false %}
 								<a class="btn btn-primary btn-block btn-lg btn-item-preview" href="{{ site.baseurl }}/posts/{{ page.slug }}/live-preview/" target="_blank"><span class="glyphicon glyphicon-play-circle"></span> Live Preview</a>
+							{% else %}
+								<a class="btn btn-primary btn-block btn-lg btn-item-preview" href="{{ page.live-preview-external }}" target="_blank"><span class="glyphicon glyphicon-play-circle"></span> Live Preview</a>
 							{% endif %}
 							<button class="btn btn-danger btn-block btn-lg btn-item-download" data-toggle="modal" data-target="#downloadModal"><span class="glyphicon glyphicon-cloud-download"></span> Download ZIP</button>
 							<br>
@@ -48,7 +50,7 @@
 							<ul class="list-unstyled specification">
 								<li data-toggle="tooltip" data-placement="left" title="Released on"><span class="glyphicon glyphicon-calendar"></span> &nbsp; {{ page.date | date_to_string }}</li>
 								<li data-toggle="tooltip" data-placement="left" title="Browser compatibility"><span class="glyphicon glyphicon-list"></span> &nbsp; {{ page.compatibility }}</li>
-								{% if page.framework == 0 %}
+								{% if page.framework == false %}
 								{% else %}
 									<li data-toggle="tooltip" data-placement="left" title="Framework"><span class="glyphicon glyphicon-filter"></span> &nbsp; {{ page.framework }}</li>
 								{% endif %}
