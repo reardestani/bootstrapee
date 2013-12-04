@@ -1,6 +1,7 @@
 ---
 layout: single
 slug: 7-free-psd-profile-ui
+live-preview-external: false
 full-preview: full-preview
 grid-preview-width: 3
 grid-preview-height: 1
@@ -9,7 +10,7 @@ contributer-badge: Founder
 contributer-description: Designer and Developer 
 contributer-portfolio: 
 compatibility: Photoshop CS+
-framework: 0
+framework: false
 category: psd
 include: PSD
 tag: freebie, psd
