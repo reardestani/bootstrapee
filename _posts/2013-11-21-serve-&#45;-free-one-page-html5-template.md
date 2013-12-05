@@ -1,21 +1,36 @@
 ---
 layout: single
 slug: serve-free-one-page-html5-template
-live-preview-external: false
-full-preview: full-preview
+
+# Visibility Options
+# --------------------------------------------
+featured: true
+homepage: true
+disable: false
+
+# Preview Options
+# --------------------------------------------
+live-preview: internal
+live-preview-external-link:
 grid-preview-width: 2
 grid-preview-height: 1
+
+# Contributer Options
+# --------------------------------------------
 contributer: reardestani
 contributer-badge: Founder
 contributer-description: Designer and Developer 
 contributer-portfolio: 
+
+# Item Featurs' Options
+# --------------------------------------------
 compatibility: IE8+, Chrome, Firefox, Opera
 framework: Bootstrap 3
 category: html
 include: HTML, CSS, JS, PHP
 tag: freebie, html, css
 gumroad-link: https://gum.co/Wpid
-featured: true
+
 ---
 Serve is a flat, minimal and creative one page HTML and CSS template. It is responsive and based on twitter bootstrap framework. It has been writted with LESS which makes your customizations dead easy.
 

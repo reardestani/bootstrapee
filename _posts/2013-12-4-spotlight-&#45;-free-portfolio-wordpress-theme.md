@@ -1,21 +1,36 @@
 ---
 layout: single
 slug: spotlight-free-portfolio-wordpress-theme
-live-preview-external: http://wp.rezaardestani.ir/spotlight
-full-preview: mid-preview
+
+# Visibility Options
+# --------------------------------------------
+featured: true
+homepage: true
+disable: false
+
+# Preview Options
+# --------------------------------------------
+live-preview: image
+live-preview-external-link:
 grid-preview-width: 2
 grid-preview-height: 1
+
+# Contributer Options
+# --------------------------------------------
 contributer: reardestani
 contributer-badge: Founder
 contributer-description: Designer and Developer 
 contributer-portfolio: 
+
+# Item Featurs' Options
+# --------------------------------------------
 compatibility: IE8+, Chrome, Firefox, Opera
 framework: Bootstrap 3, Underscores
 category: wordpress
 include: PHP, CSS, JS
 tag: freebie, wordpress
 gumroad-link: https://gum.co/JnNzA
-featured: true
+
 ---
 Spotlight is a Premium WordPress Theme worth $40 but we decided to share it for **free** in here, [Bootstrapee](http://bootstrapee.com). Recommended gift for this freebie is **$10**. 
 

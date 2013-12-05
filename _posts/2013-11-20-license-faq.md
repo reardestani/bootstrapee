@@ -1,12 +1,28 @@
 ---
 layout: blog-single
 slug: license-faq
+
+# Visibility Options
+# --------------------------------------------
+featured: false
+homepage: true
+disable: false
+
+# Preview Options
+# --------------------------------------------
 grid-preview-width: 1
 grid-preview-height: 1
-category: blog
-tag: announcement
+
+# Contributer Options
+# --------------------------------------------
 contributer: reardestani
 contributer-badge: Founder
+
+# Item Featurs' Options
+# --------------------------------------------
+category: blog
+tag: announcement
+
 ---
 ### Let's talk about the license 
 Licensing is a big issue in every project. We try our best to choose the best possible, easy-to-understand solution.

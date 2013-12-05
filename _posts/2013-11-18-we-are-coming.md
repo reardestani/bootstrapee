@@ -1,12 +1,28 @@
 ---
 layout: blog-single
 slug: we-are-coming
+
+# Visibility Options
+# --------------------------------------------
+featured: false
+homepage: true
+disable: false
+
+# Preview Options
+# --------------------------------------------
 grid-preview-width: 2
 grid-preview-height: 1
-category: blog
-tag: announcement
+
+# Contributer Options
+# --------------------------------------------
 contributer: reardestani
 contributer-badge: Founder
+
+# Item Featurs' Options
+# --------------------------------------------
+category: blog
+tag: announcement
+
 ---
 ### Beta release announcement 
 It is a beta release about the brand new open source project called "bootstrapee". I'd like to introduce this project, its goal and answer to some of the basic questions here.
