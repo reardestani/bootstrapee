@@ -34,13 +34,15 @@ title: Bootstrapee
       <div class="carousel-inner">
 
         {%	for post in site.posts %}
-        	{% if post.featured == true %}
-	          <div class="item">
-	            <a href="{{ site.baseurl }}{{ post.url }}">
-	            	<span class="glyphicon glyphicon-link"></span>
-	            	<img src="{{ site.baseurl }}/posts/{{ post.slug }}/mid-preview.jpg" alt="{{ post.title }}">
-	            </a>
-	          </div>
+        	{% if post.disable == false %}
+	        	{% if post.featured == true %}
+		          <div class="item">
+		            <a href="{{ site.baseurl }}{{ post.url }}">
+		            	<span class="glyphicon glyphicon-link"></span>
+		            	<img src="{{ site.baseurl }}/posts/{{ post.slug }}/mid-preview.jpg" alt="{{ post.title }}">
+		            </a>
+		          </div>
+		         {% endif %}
 	         {% endif %}
 				{% endfor %}
 
@@ -54,14 +56,18 @@ title: Bootstrapee
 	<div class="grid-container clearfix">
 
 		{%	for post in site.posts %}
-			<div class="nested-item size{{ post.grid-preview-width }}{{ post.grid-preview-height }}">
-				<a class="item-image" href="{{ site.baseurl }}{{ post.url }}"><img src="{{ site.baseurl }}/posts/{{ post.slug }}/grid-preview.jpg" alt="{{ post.title }}" /></a>
-				<span class="item-category">{{ post.category }}</span>
-				<div class="item-contributer">
-					<img class="img-thumbnail" src="{{ site.baseurl }}/contributers/{{ post.contributer }}/{{ post.contributer }}.png" alt="{{ post.contributer }}" />
-					<h5>@{{ post.contributer }} <br><small>{% include post-title.html %}</small></h5>
-				</div> <!-- /item-contributer -->
-			</div> <!-- /nested-item -->
+			{% if post.disable == false %}
+				{% if post.homepage == true %}
+					<div class="nested-item size{{ post.grid-preview-width }}{{ post.grid-preview-height }}">
+						<a class="item-image" href="{{ site.baseurl }}{{ post.url }}"><img src="{{ site.baseurl }}/posts/{{ post.slug }}/grid-preview.jpg" alt="{{ post.title }}" /></a>
+						<span class="item-category">{{ post.category }}</span>
+						<div class="item-contributer">
+							<img class="img-thumbnail" src="{{ site.baseurl }}/contributers/{{ post.contributer }}/{{ post.contributer }}.png" alt="{{ post.contributer }}" />
+							<h5>@{{ post.contributer }} <br><small>{% include post-title.html %}</small></h5>
+						</div> <!-- /item-contributer -->
+					</div> <!-- /nested-item -->
+				{% endif %}
+			{% endif %}
 		{% endfor %}	
 
 	</div> <!-- /grid-container -->
