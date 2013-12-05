@@ -39,7 +39,8 @@ It is a minimal, clean and easy-to-use WordPress theme. Our main purpose of this
 ---
 #### Homapage Layouts:
 ---
-One of the key feature of this theme is **homepage flexibility**. It comes with 17 default homepage layouts (you can choose from theme customizer).
+One of the key feature of this theme is **homepage flexibility**. It comes with 17 default homepage layouts (you can choose from theme customizer). Watch below video to understand what I mean in action.
+<iframe src="http://www.screenr.com/embed/lNiH" width="640" height="390" frameborder="0"></iframe>
 
 ---
 #### Features:
@@ -63,7 +64,7 @@ One of the key feature of this theme is **homepage flexibility**. It comes with 
 #### Recommendations: 
 ---
 + For **translation purpose**, we recommend <a href="https://poeditor.com/" target="_blank">PO Editor</a> and <a href="https://localise.biz/free/poedit" target="_blank">Loco</a>
-+ Looking for **hosting service**, we recommend <a href="http://goo.gl/E1ILxo" target="_blank" title="Cheap Prices (both monthly and hourly), Developer Friendly and Easy-to-use Control Panel">Digital Ocean</a> and <a href="http://goo.gl/z6pE94" target="_blank" title="New Hosing Technologies, 2 Month Free Hosting, Over 200,000 WordPress Hosting, 1 Click WordPress Installation">Media Template</a>
++ Looking for **hosting service**, we recommend <a href="http://goo.gl/E1ILxo" target="_blank" title="Cheap Prices (both monthly and hourly), Developer Friendly and Easy-to-use Control Panel">Digital Ocean</a> and <a href="http://www.mediatemple.net" target="_blank" title="New Hosing Technologies, 2 Month Free Hosting, Over 200,000 WordPress Hosting, 1 Click WordPress Installation">Media Template</a>
 + <a href="http://wordpress.org/plugins/easy-bootstrap-shortcodes/" target="_blank">Easy Bootstrap Shortcode</a> WordPress Plugin
 
 ---
