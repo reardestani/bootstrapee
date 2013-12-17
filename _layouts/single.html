@@ -32,7 +32,10 @@
 						<div class="item-details">
 
 							<div class="item-contributer clearfix">
-								<img class="img-thumbnail img-circle" data-toggle="tooltip" data-placement="top" title="{{ page.contributer-badge }}" src="{{ site.baseurl }}/contributers/{{ page.contributer }}/{{ page.contributer }}.png" alt="{{ post.contributer }}" />
+								<a class="img-circle" href="http://{{ page.contributer-portfolio }}" target="_blank">
+									<img class="img-thumbnail img-circle" data-toggle="tooltip" data-placement="top" title="{{ page.contributer-badge }}" src="{{ site.baseurl }}/contributers/{{ page.contributer }}/{{ page.contributer }}.png" alt="{{ post.contributer }}" />
+									<i class="glyphicon glyphicon-link"></i>
+								</a>
 								<h5><strong>@{{ page.contributer }}</strong> <br><small>{{ page.contributer-description }}</small></h5>
 							</div> <!-- /item-contributer -->
 
@@ -77,15 +80,17 @@
 			        <h4 class="modal-title" id="myModalLabel">Download</h4>
 			      </div>
 			      <div class="modal-body">
-			        <p>Thanks for downloading one of our freebies.<br> Click download button and set 0 (zero) for free download or set<br> a <strong>fair price</strong> to support the awesome contributer (<a href="#" class="pink" data-html="true" data-placement="bottom" data-toggle="popover" title="Donator Benefits" data-content="
+			        <p>Thanks for downloading one of our freebies.<br> Click download button and set 0 (zero) for free download or set<br> a <strong>fair price</strong> to support the contributer (<a href="#" class="pink" data-html="true" data-placement="bottom" data-toggle="popover" title="Donator Benefits" data-content="
 			        <ul class='list-unstyled benefits'>
 			        	<li>1. You support this project.</li>
 			        	<li>2. Auto update notifications.</li>
 			        	<li>3. Exclusive donators' freebie.</li>
 			        </ul>
 			        " role="button">What are donator' benefits?</a>).</p>
-			        <a class="btn btn-success gumroad-button" href="{{ page.gumroad-link }}">Download</a><!-- &nbsp; vs. &nbsp; 
-			        <a class="btn btn-default" href="{{ site.baseurl }}/items/{{ page.slug }}/download.zip">Download directly</a>--> 
+			        <br>
+			        <a class="btn btn-default gumroad-button" href="{{ page.gumroad-link }}">Download</a>
+			        <hr>
+			        <a class="btn btn-default gumroad-button" href="https://gumroad.com/l/kYEGv">Download All Freebies</a>
 			        <hr>
 			        <p>It is a good practice to share and notify others about freebies.</p>
 			        <ul class="list-inline">
