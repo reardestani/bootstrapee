@@ -5,7 +5,7 @@ slug: we-are-coming
 # Visibility Options
 # --------------------------------------------
 featured: false
-homepage: true
+homepage: false
 disable: false
 
 # Preview Options
