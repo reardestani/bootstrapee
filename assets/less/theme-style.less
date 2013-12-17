@@ -435,11 +435,34 @@ header {
     text-align: center;
     position: relative;
 
-    img {
+    a {
+      background-color: @pink;
+      display: inline-block;
       .size(150px, 150px);
       .box-shadow(0 0 0 15px #F7F7F4);
       margin: 15px auto;
     }
+
+    img {
+      z-index: 1;
+      position: relative;
+    }
+
+    i {
+      position: absolute;
+      top: 34%;
+      left: 44%;
+      color: #FFF;
+      font-size: 23px;
+      z-index: 0;
+    }
+
+  &:hover,
+  &:focus { 
+    img {
+      .opacity(0);
+    }
+  } // hover
 
   } // item-contributer
 
@@ -507,10 +530,6 @@ header {
 }
 
 // Gumroad btn
-.gumroad-button.btn {
-  margin-top: 10px;
-}
-
 .benefits {
   margin-bottom: 0;
 
@@ -604,6 +623,30 @@ header {
     border-color: #22282C;
   }
 
+  /* subcription form */ 
+  .mc_embed_signup {
+    margin-top: -46px;
+  }
+  
+  .mc-field-group {
+    input {
+      border-radius: 3px;
+      margin-bottom: 5px;
+    } // input
+
+    .form-control {
+      border: 2px solid #6F7375;
+      background-color: #1d2226;
+      color: lighten(#6F7375, 20%);
+
+      &:focus {
+        border: 2px solid lighten(#6F7375, 20%);
+        .box-shadow(0 0 0 #000);
+      }
+    } // .form-control
+
+  }
+      
 } // site-footer
 
 // Ion.RangeSlider | MIT License | by Denis Ineshin | ionden.com
