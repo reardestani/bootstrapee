@@ -19,8 +19,8 @@ grid-preview-height: 1
 # --------------------------------------------
 contributer: reardestani
 contributer-badge: Founder
-contributer-description: Designer and Developer 
-contributer-portfolio: 
+contributer-description: A Web Designer and Developer 
+contributer-portfolio: reardestani.ir
 
 # Item Featurs' Options
 # --------------------------------------------
