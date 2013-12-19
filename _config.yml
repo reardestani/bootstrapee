@@ -14,7 +14,7 @@ paginate_path: "blog/page:num"
 # Bloginfo
 name: "Bootstrapee"
 description: "Free, Sleek, High Quality, and Developer Friendly Web Resources"
-version: "0.0.4"
+version: "0.0.5"
 
 # Custom variables
 jquery_url: "https://code.jquery.com/jquery-1.10.2.min.js"
