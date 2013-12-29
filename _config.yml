@@ -16,6 +16,9 @@ name: "Bootstrapee"
 description: "Free, Sleek, High Quality, and Developer Friendly Web Resources"
 version: "0.0.5"
 
+# Gumroad download center link
+gumroad-download-center-link: "https://gumroad.com/l/LnXFd"
+
 # Custom variables
 jquery_url: "https://code.jquery.com/jquery-1.10.2.min.js"
 bootstrap_css_url: "//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"
