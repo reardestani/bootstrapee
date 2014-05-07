@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+<meta name="keywords" content="HTML, CSS, HTML5, CSS3, PHP, JQuery, LESS, web resources, freebies, PSD, free files, free to use, developer friendly, high quality, donation, contributor, contribution, open source ">
+<meta name="description" content="	
+	{% if page.title == 'Bootstrapee' %}
+		{{ site.name }} &middot; {{ site.description }}
+	{% else %}
+		{{ page.title }} &middot; Bootstrapee
+	{% endif %} 
+">
+<meta name="author" content="">
+
+<title>
+	{% if page.title == "Bootstrapee" %}
+		{{ site.name }} &middot; {{ site.description }}
+	{% else %}
+		{{ page.title }} &middot; Bootstrapee
+	{% endif %} 
+</title>
+
+<!-- Bootstrap core CSS -->
+<link href="{{ site.bootstrap_css_url }}" rel="stylesheet">
+
+<!-- Bootstrapee extras -->
+<link href="{{ site.baseurl }}/assets/css/theme-style.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="{{ site.baseurl }}/assets/ico/favicon.png">

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		{% include header.html %}
+	</head>
+	<body>
+		<a class="sr-only" href="#content">Skip to main content</a>
+
+		{% include blog-nav.html %}
+
+		<section id="content" class="content">
+			<div class="container blog clearfix">
+				<div class="page-header">
+					<h1 class="post-title">{% include page-title.html %}</h1>
+				</div>
+				<img class="img-thumbnail full" src="{{ site.baseurl }}/posts/{{ page.slug }}/full-preview.jpg" alt="{{ page.title }}">
+				<br><br>
+
+				<div class="row">
+					<div class="col-xs-3 post-meta">
+						<ul class="list-unstyled">
+							<li>
+								{% if page.tag == "announcement" %}
+									<span class="glyphicon glyphicon-bell" data-toggle="tooltip" data-placement="left" title="{{ page.tag }}"></span> 
+								{% else %}
+									<span class="glyphicon glyphicon-gift" data-toggle="tooltip" data-placement="left" title="{{ page.tag }}"></span>
+								{% endif %}
+							</li>
+							<li><strong>@{{ page.contributer }}</strong></li>
+							<li class="small-text">{{ page.date | date_to_string }}</li>
+							<li><br><a class="pink" href="{{ site.baseurl }}/blog">&larr; All posts</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-9"> 				
+						{{ content }}
+						<hr>
+					  <div id="disqus_thread"></div>
+					</div>
+				</div> <!-- /row -->
+			</div> <!-- /container -->
+		</section> <!-- /content -->
+
+		<!-- Footer
+		============================================-->
+		<footer class="site-footer" role="contentinfo">
+			{% include footer.html %}
+			{% include disqus.html %}
+		</footer>
+
+	</body>
+</html>

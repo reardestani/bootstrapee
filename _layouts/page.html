@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		{% include header.html %}
+	</head>
+	<body class="page">
+		<a class="sr-only" href="#content">Skip to main content</a>
+
+		{% include page-nav.html %}
+
+		{{ content }}
+
+		<!-- Footer
+		============================================-->
+		<footer class="site-footer" role="contentinfo">
+			{% include footer.html %}
+		</footer>
+
+	</body>
+</html>
