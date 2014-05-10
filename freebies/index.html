@@ -1,0 +1,23 @@
+---
+layout: home
+title: Bootstrapee
+name: all freebies
+---
+
+{% include nav.html %}
+
+<section class="items">
+	<div class="container">
+		<div class="row">
+			{% for post in site.categories['freebies'] %}
+				{% if post.disable == false %}
+					{% if post.homepage == true %}
+						<div class="col-sm-6 col-md-4">
+							{% include post.html %}
+						</div> <!-- /.col-sm-6 col-md-4 -->
+					{% endif %}
+				{% endif %}
+			{% endfor %}	
+		</div> <!-- /.row -->
+	</div> <!-- /.container -->
+</section>

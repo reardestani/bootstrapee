@@ -1,0 +1,17 @@
+<div class="widget items-related">
+	<div class="widget-padding">
+		<h2 class="widget-title">Related Items </h2>
+	</div>
+	<div class="divider"></div>
+	<div class="widget-padding">
+		<div class="row">
+			{% for post in site.categories['freebies'] limit:3 %}
+				{% if post.disable == false and post.related == page.categories[1] and post.id != page.id %}
+					<div class="col-sm-4">
+						<a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}"><img class="img-responsive center-block" src="{{ site.baseurl }}/freebies/{{ post.id }}/preview.jpg"></a>
+					</div> <!-- /.col-sm-4 -->
+				{% endif %}
+			{% endfor %}
+		</div> <!-- /.row -->
+	</div> <!-- /.widget-padding -->
+</div> <!-- /.items-related -->

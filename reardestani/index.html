@@ -1,0 +1,68 @@
+---
+layout: page
+title: All contributions of reardestani
+full_name: Reza Ardestani
+username: reardestani
+badge: Founder
+description: I am a web designer and developer. 
+portfolio: 
+---
+
+{% include functions.html %}
+
+<section class="profile">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2">
+				<img src="reardestani.png" class="img-circle img-responsive avatar">
+			</div> <!-- /.col -->
+			<div class="col-sm-10">
+				<h3 class="full-name">{{ page.full_name }} <small>{{ page.badge }}</small></h3>
+				<p class="description">{{ page.description }}</p>
+				<ul class="list-inline counters">
+					<li class="freebies-counter">Freebies: 
+						<span>{{ counter_reardestani }}</span>
+					</li>
+					<li class="freebies-views">Freebies' views: 
+						<span>
+							<div class="spinner">
+							  <div class="rect1"></div>
+							  <div class="rect2"></div>
+							  <div class="rect3"></div>
+							  <div class="rect4"></div>
+							  <div class="rect5"></div>
+							</div>
+						</span>
+					</li>
+					<li class="freebies-downloads">Freebies' downloads: 
+						<span>
+							<div class="spinner">
+							  <div class="rect1"></div>
+							  <div class="rect2"></div>
+							  <div class="rect3"></div>
+							  <div class="rect4"></div>
+							  <div class="rect5"></div>
+							</div>
+						</span>
+					</li>
+				</ul>
+			</div> <!-- /.col -->
+		</div> <!-- /.row -->
+	</div> <!-- /.container -->
+</section>
+
+<section class="items">
+	<div class="container">
+		<div class="row">
+			{% for post in site.categories['reardestani'] %}
+				{% if post.disable == false %}
+					{% if post.homepage == true %}
+						<div class="col-sm-6 col-md-4">
+							{% include post.html %}
+						</div> <!-- /.col-sm-6 col-md-4 -->
+					{% endif %}
+				{% endif %}
+			{% endfor %}	
+		</div> <!-- /.row -->
+	</div> <!-- /.container -->
+</section>
