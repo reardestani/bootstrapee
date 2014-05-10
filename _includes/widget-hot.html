@@ -1,0 +1,13 @@
+<div class="widget items-hot">
+	<div class="widget-padding">
+		<h2 class="widget-title">Hot on Bootstrapee</h2>
+	</div>	
+	<div class="divider"></div>
+	<div class="widget-padding">
+		{% for post in site.categories['freebies'] limit:3 %}
+			{% if post.disable == false and post.hot == true and post.id != page.id %}
+				<a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}"><img class="img-responsive center-block" src="{{ site.baseurl }}/freebies/{{ post.id }}/preview.jpg"></a>
+			{% endif %}
+		{% endfor %}
+	</div>
+</div> <!-- /.items-hot -->

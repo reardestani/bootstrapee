@@ -2,24 +2,33 @@
 markdown: rdiscount
 
 # Permalinks
-permalink: pretty
+permalink: /:title
 
 # Url
 baseurl: "http://bootstrapee.com"
 
 # Pagination
-paginate: 10
-paginate_path: "blog/page:num"
+paginate: 3
+paginate_path: "/:num"
+
+# Future
+future: true
 
 # Bloginfo
 name: "Bootstrapee"
 description: "Free, Sleek, High Quality, and Developer Friendly Web Resources"
-version: "0.0.5"
+version: "1.0.0"
+
+# Notification
+notification: 1
+
+# Freebies
+freebies: 5
 
 # Gumroad download center link
-gumroad-download-center-link: "https://gumroad.com/l/kYEGv"
+gumroad-link: "https://gumroad.com/l/freebies"
 
 # Custom variables
-jquery_url: "https://code.jquery.com/jquery-1.10.2.min.js"
-bootstrap_css_url: "//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"
-bootstrap_js_url: "//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"
+jquery_url: "https://code.jquery.com/jquery-1.9.0.min.js"
+bootstrap_css_url: "//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+bootstrap_js_url: "//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"

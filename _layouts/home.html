@@ -3,7 +3,7 @@
 	<head>
 		{% include header.html %}
 	</head>
-	<body>
+	<body data-status="{{ site.notification }}">
 		<a class="sr-only" href="#content">Skip to main content</a>
 
 		{{ content }}
@@ -12,6 +12,7 @@
 		============================================-->
 		<footer class="site-footer" role="contentinfo">
 			{% include footer.html %}
+			<script src="{{ site.baseurl }}/assets/js/get-statistics.js"></script>
 		</footer>
 
 	</body>

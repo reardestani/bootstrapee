@@ -3,10 +3,10 @@
 	<head>
 		{% include header.html %}
 	</head>
-	<body class="page">
+	<body class="page" data-status="{{ site.notification }}">
 		<a class="sr-only" href="#content">Skip to main content</a>
 
-		{% include page-nav.html %}
+		{% include nav.html %}
 
 		{{ content }}
 
@@ -14,6 +14,9 @@
 		============================================-->
 		<footer class="site-footer" role="contentinfo">
 			{% include footer.html %}
+			{% if page.title contains "All contributions" %}
+				<script src="{{ site.baseurl }}/assets/js/contributer-statistics.js"></script>
+			{% endif %}
 		</footer>
 
 	</body>

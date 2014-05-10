@@ -1,0 +1,13 @@
+<div class="widget ads-320">
+	<div class="widget-padding">
+		<h2 class="widget-title">Premium Themes & Templates</h2>
+	</div>	
+	<div class="divider"></div>
+	<div class="widget-padding">
+		{% for post in site.categories['ads'] offset:5 limit:5 %}
+			{% if post.disable == false %}
+				<a href="{{ post.ad-link }}" title="{{ post.ad-title }}"  target="_blank"><img class="img-responsive center-block" src="{{ post.ad-image-src }}" alt="{{ post.ad-title }}"></a>
+			{% endif %}
+		{% endfor %}
+	</div> <!-- /.widget-padding -->
+</div> <!-- /.ads-320 -->

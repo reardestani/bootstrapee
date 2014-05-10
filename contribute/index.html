@@ -1,0 +1,84 @@
+---
+layout: page
+title: Contribute
+slug: contribute
+---
+
+<section id="content" class="content">
+	<div class="container clearfix">
+		<div class="row">
+			<div class="col-xs-10">
+				<div class="post-content contribute">
+					<h3>Do you like to contribute?</h3>
+					<p>That is a right decision, we like to see awesome designers and developers to share their freebies in Bootstrapee. It is a place we try to share high quality, sleek and developer friendly freebies for everybody.</p>
+					<p>On the right side, you see a list of top contributers in which your avatar is missing.</p>
+					<br>
+					<h4>Contributers' benefits?</h4>
+					<p>If you take a look at our site, you will notice that it has been designed in a way that the main focus is on contributers. So as a contributer you have the following benefits:</p>
+					<ul class="list-unstyle">
+						<li>Your avatar, username and description beside your contribution</li>
+						<li>Ability to add alternative version for your freebie (e.g link to a premium version)</li>
+						<li>Your avatar appears on preview images, linked to your profile</li>
+						<li>You will receive good amount of visitors</li>
+						<li>A profile page with your information such as: full name, portfolio link, social links, "Hire me" button, "Donation" button and ...</li>
+						<li>You avatar with a freebie counter will be shown on the right side.</li>
+					</ul>
+					<br>
+					<h4>How can I contribute?</h4>
+					<p>What a good question!? Follow the below instruction to become a contributer.</p>
+
+					<dl>
+					  <dt>Step one:</dt>
+					  <dd><a class="pink" href="assets/sample-freebie.zip">Download this file</a> and fill out carefully, then <a class="pink" href="mailto:bootstrapee@gmail.com">send it to us</a> with "New Contributer" subject.</dd>
+					  <dt>Step two:</dt>
+					  <dd>We will review you information and contact you back, whether you can be a contributer or not.</dd>
+					  <dt>Step three:</dt>
+					  <dd>After your information have been reviewed, <a class="pink" href="assets/sample-freebie.zip">Download sample freebie</a> and enter your freebie information in it and then <a class="pink" href="mailto:bootstrapee@gmail.com">send it to us</a> with "New Freebie" subject.</dd>
+					</dl>
+					<br>
+					<h4>What we do?</h4>
+					<p>We will add your freebie to our site and BOOOOOOM! We also add you freebie to our freebie bundle.</p>
+					<br>
+					<h4>Read me carefully!</h4>
+					<p>Consider that in the download modal, there are two buttons for download. "Download All Freebies" and "Download This Freebie" button. Let me explain what is our goal for these two buttons. We gather all freebies in one download file which everybody can pay $5+ for once to access the download center for easier download. The 2nd button, is for user who want to download the freebie one by one directly without any donations.</p>
+					<br>
+					<h4>Some frequently asked questions:</h4>
+					<dl>
+					  <dt>What happens for users' donations?</dt>
+					  <dd>Good question, we only ask users to pay $5+ for once to access the download center for easier download and all these donation are for us. Consider the huge work behind this site to keep its improvement.</dd>
+					  <dt>How can I (as a contributer) receive donations?</dt>
+					  <dd>There is a "Donation" button in your profile page and any body can donate to you. As a matter of fact, you can benefit more from our site, just read the top benefit section again.</dd>
+					</dl>			
+				</div> <!-- /.post-content-->
+			</div> <!-- /.col-xs-10 -->
+			<div class="col-xs-2">
+				<ul class="list-unstyled text-center list-contributer">
+					<li>
+						<a href="{{ site.baseurl }}/contributer/reardestani" class="pink">
+							<img class="img-thumbnail img-circle" src="{{ site.baseurl }}/contributer/reardestani/reardestani.png" alt="reardestani" />
+							<!-- Code credit http://goo.gl/VKvPF6 -->
+							{% for post in site.posts %}
+								{% if post.contributer == "reardestani" %}
+									{% if post.category != "blog" %}
+							   		{% capture post_reardestani %} {{ post_reardestani | plus: 1 }} {% endcapture %}
+							   	{% endif %}
+								{% endif %}
+							{% endfor %}
+							{{ post_reardestani }} freebies &rarr;
+						</a>
+					</li>
+					<li>
+						<a href="" class="pink"><img class="img-thumbnail img-circle" src="{{ site.baseurl }}/contributer/themefeather/themefeather.png" alt="themefeather" />
+							{% for post in site.posts %}
+								{% if post.contributer == "ThemeFeather" %}
+							   	{% capture post_themefeather %} {{ post_themefeather | plus: 1 }} {% endcapture %}
+								{% endif %}
+							{% endfor %}
+							{{ post_themefeather }} freebies &rarr;
+						</a>
+					</li>
+				</ul>
+			</div> <!-- /.col-xs-2 -->
+		</div> <!-- /.row -->
+	</div> <!-- /grid-container -->
+</section>

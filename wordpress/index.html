@@ -1,0 +1,21 @@
+---
+layout: home
+title: WordPress Category
+name: wordpress
+---
+
+{% include nav.html %}
+
+<section class="items">
+	<div class="container">
+		<div class="row">
+			{% for post in site.categories['wordpress'] %}
+				{% if post.disable == false %}
+					<div class="col-sm-6 col-md-4">
+						{% include post.html %}
+					</div> <!-- /.col-sm-6 col-md-4 -->
+				{% endif %}
+			{% endfor %}	
+		</div> <!-- /.row -->
+	</div> <!-- /.container -->
+</section>
