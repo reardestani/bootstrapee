@@ -1,0 +1,55 @@
+
+{% include functions.html %}
+
+<header class="site-header" role="banner">
+  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{{ site.baseurl }}">Bootstrapee</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <p class="navbar-text">{{ site.description }}</p>
+        <ul class="nav navbar-nav navbar-right">
+          <li {% if page.name == "all freebies" %} class="active" {% endif %}><a href="{{ site.baseurl }}/freebies">All Freebies</a></li>
+          <li class="dropdown {% if page.title contains "Category" %} active {% endif %}">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Catalog <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li {% if page.title contains "HTML Category" %} class="active" {% endif %} ><a href="{{ site.baseurl }}/html">HTML <span class="badge">{{ counter_html }}</span></a></li>
+              <li {% if page.title contains "PSD Category" %} class="active" {% endif %} ><a href="{{ site.baseurl }}/psd">PSD <span class="badge">{{ counter_psd }}</span></a></li>
+              <li {% if page.title contains "WordPress Category" %} class="active" {% endif %} ><a href="{{ site.baseurl }}/wordpress">WordPress <span class="badge">{{ counter_wordpress }}</span></a></li>
+            </ul>
+          </li>
+          <li class="dropdown {% if page.title contains "contributions" %} active {% endif %}">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contributers <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li {% if page.contributer == "reardestani" %} class="active" {% endif %} ><a href="{{ site.baseurl }}/reardestani">reardestani <span class="badge">{{ counter_reardestani }}</span></a></li>
+              <!-- <li {% if page.contributer == "ThemeFeather" %} class="active" {% endif %} ><a href="{{ site.baseurl }}/contributers/ThemeFeather">ThemeFeather <span class="badge">{{ counter_ThemeFeather }}</span></a></li>
+              <li {% if page.contributer == "CodBits" %} class="active" {% endif %} ><a href="{{ site.baseurl }}/contributers/CodBits">CodBits <span class="badge">{{ counter_CodBits }}</span></a></li>
+              <li class="divider"></li>
+              <li {% if page.title == "All contributers" %} class="active" {% endif %} ><a href="{{ site.baseurl }}/contributers">All contributes</a></li> -->
+            </ul>
+          </li>
+          <!-- <li class="dropdown {% if page.title contains "Category12" %} active {% endif %}">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-th"></span></a>
+            <ul class="dropdown-menu">
+              <li {% if page.title == "About" %} class="active" {% endif %} ><a href="{{ site.baseurl }}/about">About</a></li> 
+              <li {% if page.title == "News" %} class="active" {% endif %} ><a href="{{ site.baseurl }}/news">News</a></li>
+              <li {% if page.title == "Terms" %} class="active" {% endif %} ><a href="{{ site.baseurl }}/terms">Terms</a></li>
+              <li {% if page.title == "Contributers" %} class="active" {% endif %} ><a href="{{ site.baseurl }}/contributers">Contributers</a></li>
+              <li {% if page.title == "Contact" %} class="active" {% endif %} ><a href="{{ site.baseurl }}/contact">Contact</a></li>
+            </ul>
+          </li> -->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</header>

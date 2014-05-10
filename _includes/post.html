@@ -1,0 +1,36 @@
+<div class="item" data-id="{{ post.ID }}" data-fn="get-statistics">
+	<a href="{{ site.baseurl }}{{ post.url }}"><img class="img-responsive" src="{{ site.baseurl }}/freebies/{{ post.id }}/preview.jpg"></a>
+	<div class="item-padding">
+		<h2 class="item-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+	</div> <!-- /.item-padding -->
+	<div class="divider"></div>
+		<div class="item-padding meta">
+			<span class="glyphicon glyphicon-calendar"></span> &nbsp; {{ post.date | date_to_string }} &nbsp; &middot; &nbsp;
+			<span class="glyphicon glyphicon-eye-open"></span> &nbsp; 
+			<span class="counter-views">
+				<div class="spinner">
+				  <div class="rect1"></div>
+				  <div class="rect2"></div>
+				  <div class="rect3"></div>
+				  <div class="rect4"></div>
+				  <div class="rect5"></div>
+				</div>
+			</span> &nbsp; &middot; &nbsp;
+			<span class="glyphicon glyphicon-cloud-download"></span> &nbsp; 
+			<span class="counter-downloads">
+				<div class="spinner">
+				  <div class="rect1"></div>
+				  <div class="rect2"></div>
+				  <div class="rect3"></div>
+				  <div class="rect4"></div>
+				  <div class="rect5"></div>
+				</div>
+			</span> &nbsp;
+		</div>
+	<div class="divider"></div>
+	<div class="item-padding item-contributer">
+		<a href="{{ site.baseurl }}/{{ post.contributer }}"><img class="item-contributer-image" src="{{ site.baseurl }}/{{ post.contributer }}/{{ post.contributer }}.png" alt="{{ post.contributer }}" /></a>
+		<h3 class="item-contributer-username"><a href="{{ site.baseurl }}/{{ post.contributer }}">{{ post.contributer }}</a></h3>
+		<p class="item-contributer-freebies">	{{ post.contributer-freebie }} freebie of {{ site.freebies }} freebies</p>
+	</div> <!-- /.item-padding -->
+</div> <!-- /.item -->

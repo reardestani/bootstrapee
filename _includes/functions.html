@@ -1,0 +1,25 @@
+{% for post in site.categories['html'] %}
+  {% capture counter_html %} {{ counter_html | plus: 1 }} {% endcapture %}
+{% endfor %}
+
+{% for post in site.categories['psd'] %}
+  {% capture counter_psd %} {{ counter_psd | plus: 1 }} {% endcapture %}
+{% endfor %}
+
+{% for post in site.categories['wordpress'] %}
+  {% capture counter_wordpress %} {{ counter_wordpress | plus: 1 }} {% endcapture %}
+{% endfor %}
+
+
+
+{% for post in site.categories['reardestani'] %}
+  {% capture counter_reardestani %} {{ counter_reardestani | plus: 1 }} {% endcapture %}
+{% endfor %}
+
+{% for post in site.categories['themefeather'] %}
+  {% capture counter_themefeather %} {{ counter_themefeather | plus: 1 }} {% endcapture %}
+{% endfor %}
+
+{% for post in site.categories['codbits'] %}
+  {% capture counter_codbits %} {{ counter_codbits | plus: 1 }} {% endcapture %}
+{% endfor %}
