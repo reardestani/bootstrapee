@@ -7,7 +7,6 @@ categories:
  - psd
  - reardestani
 related: psd
-excerpt: It is our first freebie in the brand new Bootstrapee project. It is a free PSD modal contact form with flat design.
 
 # Visibility
 # --------------------------------------------

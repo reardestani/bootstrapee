@@ -16,6 +16,10 @@
   {% capture counter_reardestani %} {{ counter_reardestani | plus: 1 }} {% endcapture %}
 {% endfor %}
 
+{% for post in site.categories['andreijosan'] %}
+  {% capture counter_andreijosan %} {{ counter_andreijosan | plus: 1 }} {% endcapture %}
+{% endfor %}
+
 {% for post in site.categories['themefeather'] %}
   {% capture counter_themefeather %} {{ counter_themefeather | plus: 1 }} {% endcapture %}
 {% endfor %}

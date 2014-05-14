@@ -20,7 +20,7 @@
 									    <a class="btn btn-primary btn-lightbox" href="{{ site.baseurl }}/freebies/{{ page.id }}/full-preview.jpg">Preview</a>
 									  </div>
 									  <div class="btn-group">
-									    <button class="btn btn-danger btn-download" data-download="{{ site.baseurl }}/freebies/{{ page.id }}/{{ page.id }}.zip" data-id="{{ page.ID }}" data-fn="update-downloads">Download This</button>
+									    <button class="btn btn-danger btn-download" data-download="{{ site.baseurl }}/freebies{{ page.id }}{{ page.id }}.zip" data-id="{{ page.ID }}" data-fn="update-downloads">Download This</button>
 									  </div>
 									  <div class="btn-group">
 									    <a href="{{ site.gumroad-link }}" class="btn btn-success">Download All</a>
@@ -28,6 +28,12 @@
 									</div>
 							  </div> <!-- /.item-padding -->
 							<div class="divider"></div>
+							{% if page.alt-version == 1 %}
+								<div class="item-padding alt-version">
+									<p>{{ page.alt-content }}</p>
+								</div>
+								<div class="divider"></div>
+							{% endif %}
 							<div class="item-padding">
 								<h1 class="item-single-title">{{ page.title }}</h1>
 								{{ content }}
