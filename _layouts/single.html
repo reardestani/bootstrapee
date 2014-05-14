@@ -28,6 +28,12 @@
 									</div>
 							  </div> <!-- /.item-padding -->
 							<div class="divider"></div>
+							{% if page.alt-version == 1 %}
+								<div class="item-padding alt-version">
+									<p>{{ page.alt-content }}</p>
+								</div>
+								<div class="divider"></div>
+							{% endif %}
 							<div class="item-padding">
 								<h1 class="item-single-title">{{ page.title }}</h1>
 								{{ content }}

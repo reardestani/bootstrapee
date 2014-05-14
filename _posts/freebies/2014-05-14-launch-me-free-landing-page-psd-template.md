@@ -17,7 +17,7 @@ disable: false
 # Alternative Version
 # --------------------------------------------
 alt-version: 1
-alt-content: Premium HTML version is avaiable at <a href="http://themeforest.net/item/launchme-clean-landing-page/7046309?ref=ThemeFeather">Launch.me - Clean Landing Page</a>
+alt-content: Download Premium HTML version <a href="http://themeforest.net/item/launchme-clean-landing-page/7046309?ref=ThemeFeather" target="_blank">Launch.me - Clean Landing Page</a> now.
 
 # Contributer
 # --------------------------------------------
