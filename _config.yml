@@ -23,7 +23,7 @@ version: "1.0.0"
 notification: 1
 
 # Freebies
-freebies: 5
+freebies: 6
 
 # Gumroad download center link
 gumroad-link: "https://gumroad.com/l/freebies"
