@@ -17,13 +17,13 @@ future: true
 # Bloginfo
 name: "Bootstrapee"
 description: "Free, Sleek, High Quality, and Developer Friendly Web Resources"
-version: "1.0.0"
+version: "1.0.1"
 
 # Notification
 notification: 1
 
 # Freebies
-freebies: 5
+freebies: 6
 
 # Gumroad download center link
 gumroad-link: "https://gumroad.com/l/freebies"
