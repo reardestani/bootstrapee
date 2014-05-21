@@ -8,8 +8,8 @@ permalink: /:title
 baseurl: "http://bootstrapee.com"
 
 # Pagination
-paginate: 3
-paginate_path: "/:num"
+# paginate: 3
+# paginate_path: "/:num"
 
 # Future
 future: true
@@ -23,7 +23,7 @@ version: "1.0.1"
 notification: 1
 
 # Freebies
-freebies: 6
+freebies: 7
 
 # Gumroad download center link
 gumroad-link: "https://gumroad.com/l/freebies"
