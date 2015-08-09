@@ -5,7 +5,7 @@ markdown: rdiscount
 permalink: /:title
 
 # Url
-baseurl: "http://bootstrapee.com"
+baseurl: "http://reardestani.github.com/bootstrapee"
 
 # Pagination
 # paginate: 3
